@@ -17,14 +17,14 @@ global users, global_unique_domains, train_test_samples, train_test_labels
 
 def get_global_unique_domains() -> 'A dataframe of the top 100 domains':
     """Crate the dictionary: If the domain name is not
-     in the global_unique_domains dictionary
-     add the domain name and set its Appearance to 1
-     and set its Count value.
-     if the domain name is in the dictionary add one to its Appearance
-     and add its Count value.
+        in the global_unique_domains dictionary
+        add the domain name and set its Appearance to 1
+        and set its Count value.
+        if the domain name is in the dictionary add one to its Appearance
+        and add its Count value.
 
-     Create the Dataframe: From the dictionary, filter it to show
-     only domain that all user requested, then, sort it descending by count.
+     Create the Dataframe: From the dictionary, filter to show
+      only domain that all user requested, then, sort it descending by count.
     """
 
     global_unique_domains = dict()

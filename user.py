@@ -29,7 +29,7 @@ class User:
         df = pd.DataFrame(series.value_counts())
         # Rename 'dns.qry.name' column to 'Count'.
         df = df.rename(columns={'dns.qry.name': 'Count'})
-        # A Series of domain name and their frequency - percentage from the total number of domains.
+        # A Series of domain names and their frequency - percentage from the total number of domains.
         percentage = df.apply(lambda x: x / df.sum()[0])
         # Insert the 'Percentage column to the Dataframe.
         df.insert(1, 'Percentage', percentage)
